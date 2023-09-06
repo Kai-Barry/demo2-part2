@@ -36,12 +36,12 @@ class CIFAR_Classifier(nn.Module):
 """
 The batch size represents the number of data samples (or images) that are processed in a single forward and backward pass through the neural network during each training iteration.
 """
-batch_size = 5
+batch_size = 32
 
 """
 An epoch is one complete pass through the entire training dataset. During one epoch, the model processes and learns from all the training examples once.
 """
-num_epochs = 4
+num_epochs = 100
 """
 In each iteration, the gradients of the loss function with respect to the parameters are computed. The learning rate is then used to scale these gradients before applying them to update the parameters.
 parameter_new = parameter_old - (learning_rate * gradient)
